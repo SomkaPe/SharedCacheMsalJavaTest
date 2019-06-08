@@ -30,7 +30,7 @@ public class TestConsoleApp {
     }
 
     public static void main(String args[]) throws Exception {
-        String pathToInputConfiguration = args[2];
+        String pathToInputConfiguration = args[1];
 
         System.out.println("pathToInputConfiguration - " + pathToInputConfiguration);
 
