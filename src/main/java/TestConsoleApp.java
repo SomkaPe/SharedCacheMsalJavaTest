@@ -47,7 +47,7 @@ public class TestConsoleApp {
                             String data = new String(Files.readAllBytes(Paths.get(testInput.cacheFilePath)));
                             iTokenCacheAccessContext.tokenCache().deserialize(data);
                         } catch (IOException e) {
-                            e.printStackTrace();
+                            System.out.println("beforeCacheAccess failed to read cache file - " + e.getMessage());
                         }
                     }
 
