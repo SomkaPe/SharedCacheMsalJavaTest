@@ -80,7 +80,7 @@ public class TestConsoleApp {
                 }
             }
 
-            if (result != null) {
+            if (result == null) {
                 try {
                     result = app.acquireToken(UserNamePasswordParameters.builder
                             (scopes, user.upn, user.password.toCharArray()).build()).join();
